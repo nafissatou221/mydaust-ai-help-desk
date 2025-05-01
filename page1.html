@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Schedule</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="page0.html"><img src="image.png" alt="University Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="page2.html">Code of Conduct</a></li>
+                    <li><a href="page1.html" class="active">Bus
+                        Schedule</a></li>
+                    <li><a href="page3.html">Admission</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="form-container">
+            <form action="save_code.php" method="POST">
+                <input type="hidden" name="form_type" value="bus_schedule">
+                
+                <label for="route">
+                    Route Name <span>🛣</span>
+                </label>
+                <input type="text" id="route" name="Route_Name">
+
+                <label for="location">
+                    Start Location <span>📍</span>
+                </label>
+                <input type="text" id="location" name="Start_Location">
+
+                <label for="time">
+                    Departure Time <span>⏱</span>
+                </label>
+                <input type="time" id="time" name="Departure_Time">
+
+                <!-- Premier arrêt -->
+                <label for="stop_location1">
+                    Stop 1 Location <span>📍</span>
+                </label>
+                <input type="text" id="stop_location1" name="Stop_Location1">
+
+                <label for="stop_time1">
+                    Stop 1 Time <span>⏱</span>
+                </label>
+                <input type="time" id="stop_time1" name="Stop_Time1">
+
+                <!-- Deuxième arrêt -->
+                <label for="stop_location2">
+                    Stop 2 Location <span>📍</span>
+                </label>
+                <input type="text" id="stop_location2" name="Stop_Location2">
+
+                <label for="stop_time2">
+                    Stop 2 Time <span>⏱</span>
+                </label>
+                <input type="time" id="stop_time2" name="Stop_Time2">
+
+                <!-- Troisième arrêt (celui d'origine) -->
+                <label for="stop_location3">
+                    Stop 3 Location <span>📍</span>
+                </label>
+                <input type="text" id="stop_location3" name="Stop_Location3">
+
+                <label for="stop_time3">
+                    Stop 3 Time <span>⏱</span>
+                </label>
+                <input type="time" id="stop_time3" name="Stop_Time3">
+
+                <label for="location">
+                    End Location <span>📍</span>
+                </label>
+                <input type="text" id="location" name="End_Location">
+
+                <label for="time">
+                    Arrival Time <span>⏱</span>
+                </label>
+                <input type="time" id="time" name="Arrival_Time">
+
+                <label for="weekday">
+                    Days Operations <span>🗓</span>
+                </label>
+                <input type="text" id="days" name="Days_Operations">
+           
+                <label for="driver">
+                    Bus Driver <span>🧑‍✈</span>
+                </label>
+                <input type="text" id="driver" name="Bus_Driver">
+                
+                <label for="capacity">
+                    Capacity <span>🚌</span>
+                </label>
+                <input type="number" id="capacity" name="Capacity">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

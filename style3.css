@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 60%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #003366;
+    padding: 10px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.logo img {
+    width: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background: #0059b3;
+}
+
+/* Form */
+.form-container {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px;
+        font-size: 16px;
+        width: 100%;  
+        
+}
+
+button {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0059b3;
+}
+
+/* Style for the form input fields */
+input[type="text"], input[type="date"] {
+    background-color: #ffffff;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+label::before {
+    content: " ";
+    margin-right: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea {
+    height: 250px;
+    resize: none;
+    background-color: #d1e7ff;
+}

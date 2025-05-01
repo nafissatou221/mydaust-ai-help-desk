@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 60%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #003366;
+    padding: 10px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.logo img {
+    width: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #0059b3;
+}
+
+.welcome {
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome h1 {
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+.highlight {
+    color: #0078d4;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+/* AI Visuals */
+
+.ai-visual {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ai-brain {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.node {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #2196F3;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #2196F3;
+    animation: pulse 3s infinite;
+}
+
+.node.n1 { top: 50px; left: 70px; animation-delay: 0.2s; }
+.node.n2 { top: 130px; left: 40px; animation-delay: 0.5s; }
+.node.n3 { top: 210px; left: 90px; animation-delay: 0.7s; }
+.node.n4 { top: 60px; right: 60px; animation-delay: 1s; }
+.node.n5 { top: 150px; right: 40px; animation-delay: 0.3s; }
+.node.n6 { top: 220px; right: 80px; animation-delay: 0.8s; }
+
+.connection {
+    position: absolute;
+    background: linear-gradient(to right, #2196F3, rgba(33, 150, 243, 0.2));
+    height: 2px;
+    transform-origin: left;
+    animation: fade 4s infinite alternate;
+}
+
+.connection.c1 { width: 100px; top: 58px; left: 86px; transform: rotate(15deg); animation-delay: 0.5s; }
+.connection.c2 { width: 70px; top: 138px; left: 56px; transform: rotate(-25deg); animation-delay: 0.2s; }
+.connection.c3 { width: 150px; top: 150px; left: 56px; transform: rotate(15deg); animation-delay: 1s; }
+.connection.c4 { width: 90px; top: 67px; right: 76px; transform: rotate(145deg); animation-delay: 0.7s; }
+.connection.c5 { width: 80px; top: 158px; right: 56px; transform: rotate(200deg); animation-delay: 0.4s; }
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fade {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.8; }
+}
